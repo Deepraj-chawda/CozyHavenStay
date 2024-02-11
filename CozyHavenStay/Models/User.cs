@@ -20,6 +20,7 @@ namespace CozyHavenStay.Models
         public string ContactNumber { get; set; } = null!;
         public string Address { get; set; } = null!;
         public string? AccountType { get; set; }
+        public string? ProfileImage { get; set; }
 
         public virtual ICollection<Booking> Bookings { get; set; }
         public virtual ICollection<Log> Logs { get; set; }

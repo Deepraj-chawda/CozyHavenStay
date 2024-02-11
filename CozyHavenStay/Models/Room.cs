@@ -8,6 +8,7 @@ namespace CozyHavenStay.Models
         public Room()
         {
             Bookings = new HashSet<Booking>();
+            RoomImages = new HashSet<RoomImage>();
         }
 
         public int RoomId { get; set; }
@@ -21,5 +22,6 @@ namespace CozyHavenStay.Models
 
         public virtual Hotel? Hotel { get; set; }
         public virtual ICollection<Booking> Bookings { get; set; }
+        public virtual ICollection<RoomImage> RoomImages { get; set; }
     }
 }
